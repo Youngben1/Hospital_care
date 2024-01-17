@@ -6,11 +6,11 @@ import icon01 from "../assets/images/icon01.png"
 import icon02 from "../assets/images/icon02.png"
 import icon03 from "../assets/images/icon03.png"
 import {BsArrowRight} from "react-icons/bs"
+import About from "../components/About/About";
 
 const Home = () => {
   return (
     <>
-      
         <section className="hero_section pt-[60px] 2xl:h-[800px]">
           <div className="container">
             <div className="flex flex-col items-center justify-between lg:flex-row gap-[90px]">
@@ -28,7 +28,7 @@ const Home = () => {
                     treatment.
                   </p>
 
-                  <button className="btn">Request an Appointment</button>
+                  <button className="btn sm:items-center">Request an Appointment</button>
                 </div>
 
                 <div className="flex flex-col mt-[30px] lg:items-center gap-5 lg:gap-[30px] lg:mt-[70px] lg:flex-row ">
@@ -93,7 +93,7 @@ const Home = () => {
                     We provide world class care for everybody and also we have the best health facilities and up to date machines for correcting all issues. From the lab to the clinic.
                   </p>
 
-                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group-hover:bg-primaryColor items-center flex">
+                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group hover:bg-primaryColor items-center flex">
                     <BsArrowRight className="h-5 w-6 group-hover:text-white"/>
                   </Link>
                 </div>
@@ -112,7 +112,7 @@ const Home = () => {
                     You can pick from any of our choicest hospitals across the country, epending on your location and the facility closest to you. After confirming your location you can book an Appointment.
                   </p>
 
-                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group-hover:bg-primaryColor items-center flex">
+                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group hover:bg-primaryColor items-center flex">
                     <BsArrowRight className="h-5 w-6 group-hover:text-white"/>
                   </Link>
                 </div>
@@ -131,11 +131,22 @@ const Home = () => {
                     After you have found a doctor and selected a location, you can set appointment with the doctor and schedule the perfect day and time to be attended to.
                   </p>
 
-                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group-hover:bg-primaryColor items-center flex">
+                  <Link to="/doctors" className="w-[44px] h-[44px] justify-center mx-auto rounded-full border border-solid mt-[30px] hover:border-none border-[#181A1E] group hover:bg-primaryColor items-center flex">
                     <BsArrowRight className="h-5 w-6 group-hover:text-white"/>
                   </Link>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <About />
+
+        <section>
+          <div>
+            <div>
+              <h2></h2>
+              <p></p>
             </div>
           </div>
         </section>
