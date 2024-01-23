@@ -5,8 +5,10 @@ import heroImg03 from "../assets/images/hero-img03.png"
 import icon01 from "../assets/images/icon01.png"
 import icon02 from "../assets/images/icon02.png"
 import icon03 from "../assets/images/icon03.png"
+import featureImg from "../assets/images/feature-img.png"
 import {BsArrowRight} from "react-icons/bs"
 import About from "../components/About/About";
+import ServiceList from "../components/Services/ServiceList";
 
 const Home = () => {
   return (
@@ -143,10 +145,50 @@ const Home = () => {
         <About />
 
         <section>
-          <div>
-            <div>
-              <h2></h2>
-              <p></p>
+          <div className="container">
+            <div className="xl:w-[470px] mx-auto">
+              <h2 className="heading text-center">Our Medical Services</h2>
+              <p className="text_para text-center">Top class care for every patient. Our health care system is unmatched</p>
+            </div>
+
+            <ServiceList />
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <div className="flex items-center justify-between flex-col lg:flex-row">
+              <div className="xl:w-[670px]">
+                <h2 className="heading">
+                  Get delulu treatment <br /> Any damn day
+                </h2>
+
+                <ul className="pl-4">
+                  <li className="text_para">
+                    1. Schedule a mental appointment.
+                  </li>
+                  <li className="text_para">
+                    2. Search for a docki docki and buzz the office.
+                  </li>
+                  <li className="text_para">
+                    3. See who de accept new patient then try bribe am if e go see you sharpely.
+                  </li>
+                </ul>
+                <Link to="/"><button className="btn">Learn More</button></Link>
+              </div>
+
+              <div className="relative z-10 flex justify-end mt-[50px] xl:w-[770px] lg:mt-0 ">
+                <img src={featureImg} className="w-3/4" alt="" />
+
+                <div className="absolute bg-white bottom-[50px] left-0 w-[150px] lg:w-[248px] md:bottom-[100px] md:left-5 z-20 p-20 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px] ">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-[6px] lg:gap-3">
+                      <p className="text-[10px] leading-[10px]lg:text-[14px] lg:leading-[5px] text-headingColor font-[600]">Tue, 23</p>
+                      <p className="text-[10px] leading-[10px]lg:text-[14px] lg:leading-[5px] text-textColor font-[400]">10:30 AM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
