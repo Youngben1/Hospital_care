@@ -8,12 +8,13 @@ import icon03 from "../assets/images/icon03.png";
 import featureImg from "../assets/images/feature-img.png";
 import AvatarIcon from "../assets/images/avatar-icon.png";
 import videoImg from "../assets/images/video-icon.png";
-import faqImg from "../assets/images/faq-img.png"
+import faqImg from "../assets/images/faq-img.png";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../components/About/About";
 import ServiceList from "../components/Services/ServiceList";
 import Doctorlist from "../components/Doctors/Doctorlist";
 import FaqList from "../components/Faq/FaqList";
+
 
 const Home = () => {
   return (
@@ -259,13 +260,27 @@ const Home = () => {
         <div className="container">
           <div className="flex justify-between gap-[50px] lg:gap-0">
             <div className="w-1/2 hidden md:block">
-              <img src={faqImg}  alt=""/>
+              <img src={faqImg} alt="" />
             </div>
 
             <div className="w-full md:w-1/2">
               <h2 className="heading">Most asked questions by our patients</h2>
               <FaqList />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">
+              What our patients have to say
+            </h2>
+            <p className="text_para text-center">
+              Top class care for every patient. Our health care system is
+              unmatched
+            </p>
           </div>
         </div>
       </section>
