@@ -116,6 +116,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
+    // this is the footer section
   )
 }
 
